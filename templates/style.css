@@ -1,0 +1,412 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px #3687bd;
+  color: white;
+  background-color: #0099ff;
+  cursor: pointer;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+button:hover {
+  background-color: blue;
+}
+
+.color-acento {
+  color: #0099ff;
+  text-shadow: 0 0 10px rgba(0, 153, 255, 0.7), 0 0 15px rgba(0, 153, 255, 0.7);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+header {
+  background-color: rgb(245, 245, 245);
+}
+header .logo {
+  width: 200px;
+  height: 100px;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: #0099ff;
+}
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img1.png"),url("images/img2.jpg"),url("images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: background 5s ease-in infinite; 
+    animation: changeBackground 10s ease-in infinite;
+  }
+
+  /* Keyframes para la animación de cambio de fondo */
+  @keyframes changeBackground {
+    0%, 100% {
+      background-size: cover; 
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img1.png");
+    }
+    25% {
+      background-size: cover;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img2.jpg");
+    }
+    50% {
+      background-size: cover;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img3.jpg");
+    }
+    75% {
+      background-size: cover;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/img1.png");
+    }
+  }
+
+
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  font-size: 1.7em;
+}
+
+#mozi .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#informacion-extra {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#informacion-extra.container {
+  padding: 100px 0px;
+}
+
+#informacion h2 {
+  margin-top: 0;
+  font-size: 3em;
+}
+
+#informacion-extra .carta {
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+#caracteristicas .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+#caracteristicas li {
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+#Chatea-con-mozi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: #0099ff;
+  height: 80vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://wallpaperaccess.com/full/8691990.png");
+  background-size: cover; /* Esto ajustará la imagen al tamaño del contenedor */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Chatea-con-mozi button {
+  font-size: 0.7em;
+}
+footer {
+  background-color: rgb(230, 230, 230);
+}
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #mozi .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #mozi .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #mozi h2 {
+    margin-top: 0px;
+  }
+
+  .img-container {
+    background-image: url("/images/mozi.png");
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    width: 700px;
+  }
+
+  #informacion-extra .infoplus {
+    display: flex;
+    justify-content: center;
+  }
+  #informacion-extra p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #informacion-extra h2 {
+    font-size: 4em;
+  }
+
+  #informacion-extra h3 {
+    margin-top: 0;
+  }
+  #informacion-extra .carta {
+    padding: 0px;
+    margin: 20px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-color: rgb(50, 50, 50, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    height: 350px;
+    overflow: hidden;
+  }
+  .carta:nth-child(1) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://media.istockphoto.com/id/1314920131/photo/portrait-of-a-group-of-businesspeople-standing-together-in-an-office.jpg?s=612x612&w=0&k=20&c=vM__1R_aEI5WJle1byWxByFsENy0EB4GLlNLyYR7BXA=");
+  }
+
+  .carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://www.freecodecamp.org/news/content/images/2022/03/comments-python.jpg");
+  }
+
+  .carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("https://expresswriters.com/wp-content/uploads/2019/04/header1-500x500.jpg");
+  }
+
+  #caracteristicas {
+    background-image: url("Anexi/Codigos/Proyecto/templates/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 700px) 100px;
+  }
+  #caracteristicas .container {
+    text-align: initial;
+  }
+
+  #caracteristicas ul {
+    margin-left: 100px;
+  }
+  #Chatea-con-mozi button {
+    font-size: 0.7em;
+  }
+
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  #caracteristicas {
+    background-position-x: calc(100vw - 800px);
+  }
+}
+.img-container:hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.img-container {overflow:hidden;
+    transition: transform 0.5s; /* Ajusta la duración de la transición a tu preferencia (por ejemplo, 0.5s) */
+}
+#chat-container {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilos del cuadro de chat */
+#chat-box {
+  background-color: #6c6c6c;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 400px;
+  width: 350px;
+  border-radius: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+/* Estilos del campo de entrada de usuario */
+#user-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Estilos del botón de enviar */
+#send-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos de los mensajes del usuario */
+.user-message {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  text-align: right;
+}
+
+.mozi-message {
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.user-message,
+.mozi-message {
+  clear: both;
+  width: 70%;
+  word-wrap: break-word;
+}
+
+#Chatea-con-mozi h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 20px;
+}

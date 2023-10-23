@@ -1,0 +1,164 @@
+{
+  "intents": [
+    {
+      "tag": "internet",
+      "preguntas": [
+        "cuales son los planes y precios de internet",
+        "cuales son los planes de internet",
+        "cuales son los planes de internet disponibles ",
+        "internet"
+      ],
+      "respuestas": [
+        "Para ver los planes puede revisar desde la pagina web https://www.iparatodos.com.ar/ , si es para su hogar en la pestaña de 'Fibra al Hogar', sino en la pestaña de Internet! \nDe momento para el hogar contamos con 50Mbps, 100Mbps, 200Mbps, 300Mbps!"
+      ]
+    },
+    {
+      "tag": "viewtv",
+      "preguntas": [
+        "cuales son los planes y precios de viewtv",
+        "cuales son los planes y precios de view tv",
+        "que planes hay de viewtv",
+        "que planes hay de view tv",
+        "cuales son los planes de viewtv",
+        "cuales son los planes de view tv",
+        "cuales son los planes de viewtv disponibles",
+        "cuales son los planes de view tv disponibles",
+        "view tv",
+        "viewtv",
+        "cuales son los planes tiene de view tv",
+        "cuales son los planes tiene de viewtv",
+        "cuales son los planes de viewtv disponibles",
+        "cuales son los planes de view tv disponibles",
+        "cuales son los planes y precios de viewtv",
+        "cuales son los planes y precios de view tv"
+      ],
+      "respuestas": [
+        "Para ver los planes puede revisar desde la pagina web https://www.iparatodos.com.ar/ , en la segunda pestaña apareceran los distintos planes"
+      ]
+    },
+    {
+      "tag": "redirecciones a turnos",
+      "preguntas": [
+        "quiero sacar un turno",
+        "quiero un turno",
+        "quiero solicitar turno",
+        "quiero solicitar un turno",
+        "solicitar turno"
+      ],
+      "respuestas": [
+        "Claro, aqui tiene el link para registrar su turno: https://www.iparatodos.com.ar/turnosWeb"
+      ]
+    },
+    {
+      "tag": "soporte tecnico",
+      "preguntas": [
+        "como puedo ponerme en contacto con soporte tecnico",
+        "soporte tecnico"
+      ],
+      "respuestas": [
+        "Por supuesto, aqui tiene contactos de nuestros soportes tecnicos:\nTelefono:0800 555 8636\nWhatsApp:3804352448\n\nPagina web:https://www.iparatodos.com.ar/"
+      ]
+    },
+    {
+      "tag": "horarios",
+      "preguntas": ["que horarios abren"],
+      "respuestas": [
+        "Internet para todos abre de 8:30 a.m a 12:30 p.m y 5:30 p.m a 9:00 p.m (Sabados de 9:30 a.m a 12:30 p.m) y zona sur 8:30 a.m a 4:30 p.m (Sabados de 9:30 a.m a 12:30 p.m)"
+      ]
+    },
+
+    {
+      "tag": "suscripciones y requisitos de view tv",
+      "preguntas": [
+        "quiero viewtv",
+        "quiero view tv",
+        "quiero tener viewtv",
+        "quiero tener view tv"
+      ],
+      "respuestas": [
+        "Para subscribirse al servicio de viewTV deberá asistir a cualquiera de nuestras sucursales con la siguiente información: \nParticulares\nFotocopia DNI\nFotocopia factura de servicios"
+      ]
+    },
+    {
+      "tag": "suscripciones y requisitos",
+      "preguntas": [
+        "requisitos subscripcion de internet",
+        "quiero tener internet para todos",
+        "quiero internet para todos",
+        "quiero internet"
+      ],
+      "respuestas": [
+        "Para subscribirse al servicio de internet deberá asistir a cualquiera de nuestras sucursales con la siguiente información:\n1)Fotocopia de DNI de quien será el titular del servicio.\n2)Fotocopia de la factura de EDELAR que llegue a nombre del titular al domicilio en donde se quiere instalar el servicio.\nEn caso de ser un inmueble en alquiler, se requerirá una copia de la primera hoja del contrato de alquiler, con un número de teléfono local de La Rioja."
+      ]
+    },
+
+    {
+      "tag": "FAQ",
+      "preguntas_respuestas": [
+        {
+          "pregunta": "que es viewtv",
+          "respuesta": "Es una plataforma de transmisión en vivo que permite ver programas de TV a toda hora."
+        },
+        {
+          "pregunta": "que pasos debo seguir para cambiar mi plan",
+          "respuesta": "Para realizar cambios de planes debe concurrir a la sucursal más cercana a su domicilio."
+        },
+        {
+          "pregunta": "que hago si tengo problemas con la conexion",
+          "respuesta": "En caso de que presente inconvenientes de conexión, comuníquese con el servicio técnico de IPT: 0800 555 8636 opción 2. Allí recibirá asistencia de manera remota para solucionar su inconveniente. En caso de que aún así, no haya podido resolver el problema de su módem, acordarán fecha y hora de visita técnica a su domicilio."
+        },
+        {
+          "pregunta": "cuantas computadoras puedo tener conectadas",
+          "respuesta": "Con el Plan 50 Mbps, recomendamos tener conectados hasta 8 dispositivos al mismo tiempo, para obtener una mejor velocidad de conexión."
+        },
+        {
+          "pregunta": "que es un router",
+          "respuesta": "Un router es un dispositivo que proporciona Wi-Fi y que generalmente está conectado a un módem. Envía información desde Internet a los dispositivos personales, como computadoras, teléfonos o tablets. Los dispositivos conectados a Internet de tu casa conforman la red de área local (LAN)."
+        },
+        {
+          "pregunta": "donde puedo pagar mi factura vencida",
+          "respuesta": "Podés pagar su factura vencida en cualquiera de nuestras diez (10) sucursales en la provincia de La Rioja. Para conocer los medios de pago, presioná la opción FORMAS DE PAGO en nuestro sitio web www.iparatodos.com.ar"
+        },
+        {
+          "pregunta": "que es wifi",
+          "respuesta": "Es un sistema de conexión entre dispositivos de forma inalámbrica, es decir que no hacen falta cables para transferir información."
+        }
+      ]
+    },
+
+    {
+      "tag": "saludos",
+      "preguntas": ["hola", "buenos dias", "buenas noches", "buenas tardes"],
+      "respuestas": ["¡Hola soy Mozi! ¿En qué puedo ayudarte?"]
+    },
+    {
+      "tag": "despedida",
+      "preguntas": ["chau", "adios", "hasta luego"],
+      "respuestas": ["Hasta luego. ¡Que tengas un buen día!"]
+    },
+    {
+      "tag": "test",
+      "preguntas": ["prueba de velocidad", "velocidad", "prueba de internet"],
+      "respuestas": ["Realizando prueba de velocidad de Internet..."]
+    },
+    {
+      "tag": "problemas",
+      "preguntas": [
+        "no hay internet",
+        "no tengo internet",
+        "internet lento",
+        "mi internet va lento",
+        "enrutador lento",
+        "me quede sin internet",
+        "no tengo conexion",
+        "sin conexion"
+      ],
+      "respuestas": [
+        "Si has perdido la conexión a Internet, aquí hay algunas soluciones que puedes probar:\n1. Reinicia tu enrutador y módem.\n2. Verifica los cables de conexión.\n3. Comprueba si hay interrupciones en tu área por parte del proveedor de servicios de Internet.",
+        "Si experimentas problemas con la velocidad de tu enrutador, puedes intentar los siguientes pasos:\n1. Reinicia tu enrutador.\n2. Verifica si hay interferencias en la señal Wi-Fi.\n3. Actualiza el firmware de tu enrutador.",
+        "Si has perdido la conexión o su conexión a Internet es lenta, aquí hay algunas soluciones que puedes probar:\n1. Reinicia tu enrutador y módem.\n2. Verifica los cables de conexión.\n3. Comprueba si hay interrupciones en tu área por parte del proveedor de servicios de Internet.",
+        "Si has perdido la conexión a Internet, aquí hay algunas soluciones que puedes probar:\n1. Reinicia tu enrutador y módem.\n2. Verifica los cables de conexión.\n3. Comprueba si hay interrupciones en tu área por parte del proveedor de servicios de Internet."
+      ]
+    }
+  ]
+}

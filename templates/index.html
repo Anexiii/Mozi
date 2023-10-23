@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPT</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="images/logo.png" class="logo"></img>
+        <nav>
+          <a href="#mozi">Mozi</a>
+          <a href="#informacion-extra">+Informacion</a>
+          <a href="#caracteristicas">Caracteristicas</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <h1>
+        Internet para todos
+        <form action="https://iparatodos.com.ar/suscripcion/#/">
+        <button>Contrata Ya!</button>
+      </form>
+      </h1>
+    </section>
+
+    <section id="mozi">
+      <div class="container">
+        <div class="img-container" ></div>
+        <div class="texto">
+          <h2><span class="color-acento">Mozi</span>, el asistente chatbot</h2>
+          <p>
+            Mozi es un chatbot de asistencia al cliente. Tiene un software que utiliza la inteligencia artificial para simular conversaciones humanas y resolver problemas o consultas de los clientes de forma rápida y eficiente.
+
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="informacion-extra">
+      <div class="container">
+        <h2>+Informacion</h2>
+        <div class="infoplus">
+          <div class="carta">
+            <h3>Creadores de Mozi</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab ut
+              fugit quos eos maxime aut, consectetur quasi obcaecati porro dicta
+              consequuntur nam, earum amet, repudiandae reprehenderit nihil
+              sapiente exercitationem eius.
+            </p>
+          </div>
+          <div class="carta">
+            <h3>Programacion de Mozi</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab ut
+              fugit quos eos maxime aut, consectetur quasi obcaecati porro dicta
+              consequuntur nam, earum amet, repudiandae reprehenderit nihil
+              sapiente exercitationem eius.
+            </p>
+          </div>
+
+          <div class="carta">
+            <h3>Cómo usarlo?</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab ut
+              fugit quos eos maxime aut, consectetur quasi obcaecati porro dicta
+              consequuntur nam, earum amet, repudiandae reprehenderit nihil
+              sapiente exercitationem eius.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="caracteristicas">
+      <div class="container">
+        <ul>
+          <li>Atencion: 100% Online</li>
+          <li>Atencion: 24h</li>
+          <li>Atencion: Personalizada</li>
+        </ul>
+      </div>
+    </section>
+    <section id="Chatea-con-mozi">
+      <h1>Chatbot de Internet para Todos</h1>
+      <!-- El contenedor del chatbot y el campo de entrada -->
+      <div id="chat-container">
+        <div id="chat-box"></div>
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Escribe tu mensaje..."
+        />
+        <button id="send-button">Enviar</button>
+      </div>
+    </section>
+
+
+    <script>
+      const chatBox = document.getElementById("chat-box");
+      const userInput = document.getElementById("user-input");
+      const sendButton = document.getElementById("send-button");
+
+      function appendMessage(sender, message) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className =
+          sender === "Mozi" ? "mozi-message" : "user-message";
+        messageDiv.textContent = sender + ": " + message;
+        chatBox.appendChild(messageDiv);
+      }
+
+      sendButton.addEventListener("click", async () => {
+        const userMessage = userInput.value;
+        appendMessage("Tú", userMessage);
+        userInput.value = "";
+
+        const response = await fetch("http://127.0.0.1:5000/Mozi", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ message: userMessage }),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const moziResponse = data.response;
+          appendMessage("Mozi", moziResponse);
+        }
+
+
+      });
+   
+    </script>
+<script>
+
+  // Lista de URL de imágenes para la sección .hero
+const heroImages = [
+"url('images/img1.png')",
+"url('images/img3.jpg')",
+"url('images/img2.jpg')",
+];
+
+const heroSection = document.querySelector(".hero");
+let currentImageIndex = 0;
+
+function changeHeroBackgroundImage() {
+  // Cambia la imagen de fondo de la sección .hero
+  heroSection.style.backgroundImage = heroImages[currentImageIndex];
+  // Incrementa el índice para la próxima imagen
+  currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+}
+
+// Establece un intervalo para cambiar la imagen cada 5 segundos (5000 ms)
+setInterval(changeHeroBackgroundImage, 6000);
+</script>
+    <footer>
+      <div class="container">
+        <p>&copy; Anexi 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
